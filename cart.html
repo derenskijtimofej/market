@@ -1,0 +1,10 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Корзина</title><link rel="stylesheet" href="style.css"></head><body><header class="header"><div class="container topbar"><div class="brand"><div class="logo">🧺</div><div><h1>Корзина</h1><p>Красногвардейский район, Ставропольский край</p></div></div>
+<nav class="nav">
+  <a href="index.html">Главная</a>
+  <a href="catalog.html">Каталог</a>
+  <a href="favorites.html">Избранное</a>
+  <a href="cart.html">Корзина <span id="cart-count">0</span></a>
+  <a href="seller.html">Продавцам</a>
+  <a href="admin.html">Админка</a>
+</nav>
+</div></header><main class="container section"><div class="section-head"><h2 class="section-title left">Ваш заказ</h2><button class="btn btn-outline" onclick="clearCart()">Очистить корзину</button></div><div class="cart-layout"><div id="cart-items"></div><aside class="card summary" id="cart-total"></aside></div></main><div id="checkout-modal" class="modal hidden"><div class="modal-content"><button class="modal-close" onclick="closeCheckout()">&times;</button><h3>Оформление заказа</h3><form id="checkout-form" class="product-form"><input type="text" id="customer-name" placeholder="Ваше имя" required><input type="tel" id="customer-phone" placeholder="Телефон" required><input type="text" id="customer-address" placeholder="Адрес доставки" required><textarea id="customer-comment" rows="4" placeholder="Комментарий к заказу"></textarea><button type="submit" class="btn">Подтвердить заказ</button></form></div></div><footer class="footer"><div class="container"><p>© 2026 Деревенский Маркет</p></div></footer><script src="script.js"></script></body></html>

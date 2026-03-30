@@ -1,0 +1,10 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Каталог</title><link rel="stylesheet" href="style.css"></head><body><header class="header"><div class="container topbar"><div class="brand"><div class="logo">📦</div><div><h1>Каталог товаров</h1><p>Красногвардейский район, Ставропольский край</p></div></div>
+<nav class="nav">
+  <a href="index.html">Главная</a>
+  <a href="catalog.html">Каталог</a>
+  <a href="favorites.html">Избранное</a>
+  <a href="cart.html">Корзина <span id="cart-count">0</span></a>
+  <a href="seller.html">Продавцам</a>
+  <a href="admin.html">Админка</a>
+</nav>
+</div></header><main class="container section"><div class="toolbar"><input type="text" id="search-input" placeholder="Поиск товаров..."><select id="category-filter"><option value="all">Все категории</option><option>Техника</option><option>Бытовая химия</option><option>Одежда</option><option>Огород</option><option>Кухня</option><option>Дом</option></select></div><div id="catalog-products" class="products"></div></main><div id="product-modal" class="modal hidden"><div class="modal-content modal-large"><button class="modal-close" onclick="closeModal()">&times;</button><div id="modal-body"></div></div></div><footer class="footer"><div class="container"><p>© 2026 Деревенский Маркет</p></div></footer><script src="script.js"></script></body></html>
